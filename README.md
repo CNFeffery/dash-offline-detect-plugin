@@ -1,4 +1,4 @@
-# Dash Hooks Demo
+# dash-offline-detect-plugin
 
 Offline detect plugin for Dash applications using Dash Hooks. You can check out this project on PyPi at: https://pypi.org/project/dash-offline-detect-plugin
 
