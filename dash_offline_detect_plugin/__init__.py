@@ -17,7 +17,7 @@ def setup_offline_detect_plugin(
         description (str, optional): Description of the overlay. Defaults to "Unable to connect to the backend service, trying to reconnect...".
     """
 
-    @hooks.index(final=True)
+    @hooks.index()
     def add_offline_detect(app_index: str):
         # Extract the first line of the footer part
         match = re.findall("[ ]+<footer>", app_index)
@@ -126,7 +126,7 @@ def setup_offline_detect_plugin(
 
         return app_index
 
-    @hooks.route(methods=("POST",), name="_offline-detect-ping", final=True)
+    @hooks.route(methods=("POST",), name="_offline-detect-ping")
     def offline_detect_ping():
         """Ping endpoint for the offline detect plugin"""
 
