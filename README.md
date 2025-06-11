@@ -31,3 +31,15 @@ python example.py
 ```
 
 <center><img src="./images/demo.gif" /></center>
+
+## API Reference
+
+### `setup_offline_detect_plugin()`
+
+This function enables the offline detection feature for your Dash application.
+
+| Parameter     | Type  | Default                                                              | Description                                                                                                                      |
+| ------------- | ----- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `interval`    | `int` | `5000`                                                               | Interval of detection in browser (milliseconds). Controls how frequently the browser checks if the backend service is available. |
+| `title`       | `str` | `"Service Unavailable"`                                              | Title of the overlay displayed when the service is unavailable.                                                                  |
+| `description` | `str` | `"Unable to connect to the backend service, trying to reconnect..."` | Description text displayed in the overlay when the service is unavailable.                                                       |
